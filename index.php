@@ -37,4 +37,54 @@
         echo"B é maior que A!";
     }
     echo"Saiu do IF!";
-?>
+    echo "<hr>";
+    $n1 = 3;
+    $n2 = 4;
+    $n3 = 8;
+    if ($n1> $n2 && $n1 > $n3) {
+        echo " a variavel ".$n1. "é o valor maior!";
+    }
+    elseif ($n2>$n1 && $n2>$n3) {
+        echo " a variavel ".$n2. "é o valor maior!";
+    }
+    else {
+        echo " a variavel ".$n3. "é o valor maior!";
+    }
+    echo "<hr>";
+    echo "<center><h2> numeros randomicos</h2></center>";
+    $num = rand(1, 10);
+    $meunum = 8;
+    echo "o numero sorteado foi:".$num;
+    if ($num == $meunum){
+        echo "você ganhou :)";
+    }
+    else 
+    echo "voce perdeu :(";
+    echo "<hr>";
+    for ($i=0; $i <=10; $i++){
+        echo "passagem do laço for nº: ".$i. "<br>";
+    }
+    echo "<h2>tabuada</h2>";
+    $numtab =5;
+    for ($i=1; $i <=10; $i++){
+        echo $numtab."X".$i."=".$numtab*$i."<br>";
+    }
+     echo "<hr>";
+     echo "<h2>laço while</h2>";
+     $x = 1;
+     while ($x < 6) {
+        echo "laço nº:".$x."<br>";
+        $x++;
+     }
+     $a =0;
+    while ($a < 100){
+        echo $a."<br>";
+        $a+=10;
+    }
+    echo "<hr>";
+    echo "<h2>foreach</h2>";
+    $cores = array ("azul","vermelho","bege","amarelo","branco");
+    foreach ($cores as $cor) {
+        echo $cor."<br>";
+    }
+    ?>
